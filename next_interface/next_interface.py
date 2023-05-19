@@ -5,7 +5,7 @@ from pywebio.output import (toast, put_row, put_button, put_html, put_file)
 
 
 def download_video_file():
-    path_file = os.listdir('../yours_video')[0]
+    path_file = os.listdir('yours_video')[0]
     # todo: we now read password from file
     with open(file=f'yours_video/{path_file}', mode='rb') as file:
         content = file.read()

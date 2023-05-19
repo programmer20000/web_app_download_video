@@ -30,8 +30,7 @@ def download_video():
         with put_loading():
             put_text("Yours video is in the process of downloaded...")
             get_video = video.streams.get_highest_resolution()
-            get_video.download('../yours_video')
-        show_video()
+            get_video.download('yours_video')
         next_interface()
 
     except RegexMatchError:
